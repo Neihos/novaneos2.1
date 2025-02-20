@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  p {
+    margin: 0;
+  }
+}
+
+@import "header";
+@import "footer";
+@import "home";
+@import "page_contact";
+@import "page_conception";
+@import "fonts";
+@import "variables";
+
+:root {
+  --primary-color: #343f5a;
+  --secondary-color: #064cfe;
+  --tertiary-color: #0693e3;
+  --quaternary-color: #616161;
+  --quinary-color: rgba(0, 85, 255, 0.1215686275);
+}
+
+// Scrollbar
+html {
+  scrollbar-color: var(--primary-color) rgba(16, 35, 206, 0.26);
+}
+
+.hiddenNow {
+  display: none;
+}
+
+//-----> Globale pour les pages <-----
+
+.littleTitle {
+  color: #0b50fe;
+  font-size: clamp(1rem, 0.98rem + 0.091vw, 1.125rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+  padding-top: 50px;
+}
+
+h2 {
+  color: #343f5a;
+  font-size: clamp(1.5rem, 0.619rem + 3.916vw, 3.125rem);
+  font-weight: 500;
+  line-height: 1.3em;
+  margin: 30px 0;
+}
+
+@media (max-width: 1024px) {
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+}
+
+// =================================================================================================================
+//                                                  Page Article du site
+// =================================================================================================================
+
+.ast-blog-layout-4-grid .ast-row {
+  max-width: 1200px;
+}
+
+@media (min-width: 767px) {
+  .ast-separate-container #primary,
+  .ast-separate-container.ast-left-sidebar #primary,
+  .ast-separate-container.ast-right-sidebar #primary {
+    margin: 0;
+    padding: 0;
+    #main {
+      padding-top: 200px;
+      min-height: calc(100vh - 116px);
+      @include flexJustify;
+    }
+  }
+}

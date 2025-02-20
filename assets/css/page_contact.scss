@@ -1,0 +1,103 @@
+// =================================================================================================================
+//                                                  Page Contact du site
+// =================================================================================================================
+
+@import "variables";
+
+#contact-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  .illustrationContact {
+    @include flexJustify;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 170px;
+    img {
+      width: 700px;
+    }
+  }
+}
+.moyenDeContact {
+  @include flexJustify;
+  width: 100%;
+  max-width: 1200px;
+  .wpcf7 form > p {
+    margin-bottom: 0;
+  }
+  .formulaire {
+    width: 50%;
+    @include flexJustify;
+    #wpcf7-f23-o1 {
+      width: 100%;
+      margin: 50px;
+      .input__label {
+        color: var(--primary-color);
+        font-size: 18px;
+      }
+      .wpcf7-text {
+        width: 100%;
+        height: 30px;
+        border: 1px solid var(--tertiary-color);
+        border-radius: 5px;
+        margin: 8px 0;
+        padding: 5px;
+      }
+      .wpcf7-textarea {
+        width: 100%;
+        border: 1px solid var(--tertiary-color);
+        border-radius: 5px;
+        margin: 8px 0;
+        padding: 5px;
+      }
+      .btnEnvoyer {
+        width: 100%;
+        cursor: pointer;
+        color: white;
+        background-image: linear-gradient(
+          30deg,
+          var(--primary-color),
+          var(--tertiary-color)
+        );
+        border: none;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 18px;
+        &:hover {
+          background-position: right center;
+          background-size: 200% auto;
+          -webkit-animation: pulse 2s infinite;
+          animation: pulse512 1.5s infinite;
+        }
+      }
+      .wpcf7-response-output {
+        margin: 0;
+      }
+    }
+  }
+  .infoEntreprise {
+    width: 50%;
+    @include flexJustify;
+    img {
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .moyenDeContact {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 30px;
+    .formulaire {
+      width: 90%;
+      #wpcf7-f23-o1 {
+        margin: 30px;
+      }
+    }
+  }
+  .infoEntreprise {
+    width: 90%;
+  }
+}

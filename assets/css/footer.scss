@@ -1,0 +1,71 @@
+// =================================================================================================================
+//                                              Gestion du CSS du Footer
+// =================================================================================================================
+
+@import "variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+  background-image: linear-gradient(91deg, #343f5a 0%, #3d4863 100%);
+  .footerContent {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    img {
+      width: 120px;
+    }
+    p {
+      color: #d5d5d5;
+    }
+    .reseau {
+      display: flex;
+      gap: 5px;
+      a {
+        @include flexJustify;
+        border: 1px solid #d5d5d5;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        text-decoration: none;
+        i {
+          padding: 3px;
+          color: #d5d5d5;
+        }
+      }
+    }
+  }
+  .mentions {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 10%;
+    p {
+      color: #d5d5d5;
+      padding: 5px;
+    }
+  }
+  a {
+    color: #d5d5d5;
+    padding: 5px;
+    text-decoration: none;
+  }
+}
+
+@media(max-width: 767px){
+  .footer .footerContent {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer .mentions {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
