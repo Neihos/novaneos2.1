@@ -568,6 +568,9 @@
       width: 100%;
       .blockSupportAlone {
         width: 100%;
+        &.down {
+    animation: fadeInUp 1.5s ease forwards;
+  }
       }
     }
   }
@@ -579,5 +582,8 @@
     h2 {
       margin: 0;
     }
+  }
+  .blockAvantageAlone.down {
+    animation: fadeInUp 1.5s ease forwards;
   }
 }

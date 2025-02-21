@@ -48,6 +48,16 @@
     opacity: 1;
   }
 }
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @keyframes pulse512 {
   0% {
     box-shadow: 0 0 0 0 rgba(5, 186, 218, 0.6705882353);
@@ -146,13 +156,12 @@
     padding: 0 20px;
     width: 100%;
   }
-  .mobileNavContainer .logoSiteMobile {
+  .mobileNavContainer .logoSiteMobile, .mobileNavContainer a {
     display: flex;
-    align-items: center;
-    max-height: 170px;
+    max-height: 140px;
     margin: 5px;
   }
-  .mobileNavContainer .logoSiteMobile .imgLogoMobile {
+  .mobileNavContainer .logoSiteMobile .imgLogoMobile, .mobileNavContainer a .imgLogoMobile {
     max-height: clamp(7.5rem, 6.163rem + 2.789vw, 10.625rem);
     width: auto;
     -o-object-fit: contain;
@@ -162,10 +171,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0692e3;
+    background-color: #ffffff;
     padding: 8px;
     border-radius: 3px;
-    margin-top: 20px;
   }
   .mobileNav {
     display: block;
@@ -239,6 +247,16 @@
 @keyframes fadeInDown {
   0% {
     transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(300px);
     opacity: 0;
   }
   100% {
@@ -358,6 +376,16 @@
 @keyframes fadeInDown {
   0% {
     transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(300px);
     opacity: 0;
   }
   100% {
@@ -1073,6 +1101,9 @@
   .support .supportContainer .blockSupport .blockSupportAlone {
     width: 100%;
   }
+  .support .supportContainer .blockSupport .blockSupportAlone.down {
+    animation: fadeInUp 1.5s ease forwards;
+  }
   .avantage .avantageContainer {
     grid-template-columns: 1fr;
   }
@@ -1081,6 +1112,9 @@
   }
   .entreprise .entrepriseContainer h2 {
     margin: 0;
+  }
+  .blockAvantageAlone.down {
+    animation: fadeInUp 1.5s ease forwards;
   }
 }
 @keyframes moveInLeft {
@@ -1116,6 +1150,16 @@
 @keyframes fadeInDown {
   0% {
     transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(300px);
     opacity: 0;
   }
   100% {
@@ -1220,6 +1264,9 @@
 }
 
 @media (max-width: 1024px) {
+  #contact-container .illustrationContact {
+    margin-top: 120px;
+  }
   .moyenDeContact {
     flex-direction: column-reverse;
     align-items: center;
@@ -1268,6 +1315,16 @@
 @keyframes fadeInDown {
   0% {
     transform: translateY(-300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(300px);
     opacity: 0;
   }
   100% {
@@ -1386,7 +1443,7 @@
     width: 100%;
   }
   #conception-container .titleContact {
-    margin-top: 70px;
+    margin-top: 120px;
   }
 }
 /* Poppins font-face declarations */
@@ -1556,6 +1613,16 @@
     opacity: 1;
   }
 }
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @keyframes pulse512 {
   0% {
     box-shadow: 0 0 0 0 rgba(5, 186, 218, 0.6705882353);
@@ -1617,12 +1684,16 @@ h2 {
   margin: 0;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #main {
     padding-top: 170px;
   }
   #main .entry-header {
+    margin-top: 50px;
     text-align: center;
+  }
+  #main .entry-content {
+    margin-bottom: 50px;
   }
   #main .navigation {
     margin: auto;
@@ -1642,5 +1713,13 @@ h2 {
   }
   .blogStyle #main .entry-meta {
     text-align: justify;
+  }
+  .ast-plain-container.ast-no-sidebar #primary {
+    margin: 0;
+  }
+}
+@media (max-width: 767px) {
+  #main {
+    padding-top: 100px;
   }
 }/*# sourceMappingURL=theme.css.map */

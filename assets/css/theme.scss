@@ -75,11 +75,15 @@ h2 {
   margin: 0;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   #main {
     padding-top: 170px;
     .entry-header {
+      margin-top: 50px;
       text-align: center;
+    }
+    .entry-content {
+      margin-bottom: 50px;
     }
     .navigation {
       margin: auto;
@@ -98,5 +102,14 @@ h2 {
     .entry-meta {
       text-align: justify;
     }
+  }
+  .ast-plain-container.ast-no-sidebar #primary {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px){
+  #main {
+    padding-top: 100px;
   }
 }

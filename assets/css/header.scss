@@ -98,10 +98,9 @@
     justify-content: space-between;
     padding: 0 20px;
     width: 100%;
-    .logoSiteMobile {
+    .logoSiteMobile, a {
       display: flex;
-      align-items: center;
-      max-height: 170px;
+      max-height: 140px;
       margin: 5px;
       .imgLogoMobile {
         max-height: clamp(7.5rem, 6.163rem + 2.789vw, 10.625rem);
@@ -111,10 +110,9 @@
     }
     .burgerMenu {
       @include flexJustify;
-      background-color: #0692e3;
+      background-color: #ffffff;
       padding: 8px;
       border-radius: 3px;
-      margin-top: 20px;
     }
   }
   .mobileNav {
