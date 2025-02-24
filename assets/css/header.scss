@@ -91,6 +91,9 @@
   .headerContainer {
     display: none;
   }
+  #siteHeader {
+    position: relative;
+  }
 
   .mobileNavContainer {
     display: flex;
@@ -110,7 +113,6 @@
     }
     .burgerMenu {
       @include flexJustify;
-      background-color: #ffffff;
       padding: 8px;
       border-radius: 3px;
     }

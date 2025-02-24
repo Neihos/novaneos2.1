@@ -149,6 +149,9 @@
   .headerContainer {
     display: none;
   }
+  #siteHeader {
+    position: relative;
+  }
   .mobileNavContainer {
     display: flex;
     align-items: center;
@@ -171,7 +174,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
     padding: 8px;
     border-radius: 3px;
   }
@@ -339,8 +341,10 @@
   .footer .mentions {
     flex-direction: column;
     align-items: center;
-    gap: 15px;
     margin-top: 20px;
+  }
+  .footer .mentions p {
+    order: 2;
   }
 }
 @keyframes moveInLeft {
@@ -1265,7 +1269,7 @@
 
 @media (max-width: 1024px) {
   #contact-container .illustrationContact {
-    margin-top: 120px;
+    margin-top: 0px;
   }
   .moyenDeContact {
     flex-direction: column-reverse;
@@ -1443,7 +1447,7 @@
     width: 100%;
   }
   #conception-container .titleContact {
-    margin-top: 120px;
+    margin-top: 0px;
   }
 }
 /* Poppins font-face declarations */
@@ -1677,19 +1681,24 @@ h2 {
 }
 .ast-blog-layout-4-grid .ast-row {
   max-width: 1440px;
-  padding: 40px;
 }
 
 .ast-separate-container #primary {
   margin: 0;
 }
 
+#main #comments {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .ast-blog-layout-4-grid .ast-row {
+    padding-top: 40px;
+  }
   #main {
     padding-top: 170px;
   }
   #main .entry-header {
-    margin-top: 50px;
     text-align: center;
   }
   #main .entry-content {
@@ -1699,9 +1708,6 @@ h2 {
     margin: auto;
     padding: 50px;
     max-width: 1200px;
-  }
-  #main #comments {
-    display: none;
   }
   .blogStyle #main {
     margin: 0;
@@ -1716,10 +1722,11 @@ h2 {
   }
   .ast-plain-container.ast-no-sidebar #primary {
     margin: 0;
+    padding: 50px;
   }
 }
 @media (max-width: 767px) {
-  #main {
-    padding-top: 100px;
+  #main article {
+    margin: 25px;
   }
 }/*# sourceMappingURL=theme.css.map */
