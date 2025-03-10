@@ -42,6 +42,7 @@
 
 .desktopNav .menu-principal-container ul {
   display: flex;
+  margin: auto;
   gap: clamp(1.25rem, 0.448rem + 1.673vw, 3.125rem);
   li {
     list-style: none;
