@@ -8,8 +8,77 @@
     <meta name="author" content="Neihos">
     <meta name="title" content="Novaneos - Création de Sites Internet & Développement Web | Stratégie Digitale et Réseaux Sociaux">
     <meta name="robots" content="index, follow">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Novaneos - Création de Sites Internet & Développement Web">
+    <meta property="og:description" content="Novaneos est spécialisée dans la création de sites internet sur mesure, le développement web et la stratégie digitale.">
+    <meta property="og:image" content="https://www.novaneos.fr/wp-content/themes/novaneos/assets/images/logo-novaneos.png">
+    <meta property="og:url" content="https://www.novaneos.fr">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebDevelopmentCompany",
+        "name": "Novaneos",
+        "url": "https://www.novaneos.fr",
+        "logo": "https://www.novaneos.fr/wp-content/themes/novaneos/assets/images/logo-novaneos.png",
+        "description": "Novaneos est une agence spécialisée dans la création de sites internet sur mesure, le développement de logiciels web et la stratégie digitale. Nous accompagnons les entreprises dans leur transformation digitale en proposant des solutions performantes et innovantes.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "116 rue Guillain",
+          "addressLocality": "Hautmont",
+          "postalCode": "59330",
+          "addressCountry": "FR"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+33-7-62-06-05-94",
+            "contactType": "Service Client",
+            "availableLanguage": ["Français", "Anglais"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+33-7-62-06-05-94",
+            "contactType": "Service Commercial",
+            "availableLanguage": ["Français", "Anglais"]
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61573610879121",
+          "https://www.instagram.com/novaneos.fr/",
+          "https://www.linkedin.com/company/novaneos"
+        ],
+        "foundingDate": "2025",
+        "founders": [
+          {
+            "@type": "Person",
+            "name": "DETOURBE"
+          }
+        ],
+        "services": [
+          {
+            "@type": "Service",
+            "name": "Création de sites internet",
+            "description": "Développement de sites vitrines, e-commerce et plateformes sur mesure."
+          },
+          {
+            "@type": "Service",
+            "name": "Développement de logiciels web",
+            "description": "Conception de logiciels SaaS et applications web adaptées aux besoins spécifiques des entreprises."
+          },
+          {
+            "@type": "Service",
+            "name": "Stratégie digitale et SEO",
+            "description": "Optimisation du référencement naturel et accompagnement en marketing digital."
+          }
+        ],
+        "slogan": "L'innovation au service du web",
+        "taxID": "FR78940633951"
+      }
+    </script>
+    <link rel="canonical" href="https://www.novaneos.fr/">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <title>Novaneos</title>
+    <title>Novaneos - Création de Sites Internet & Développement Web | Stratégie Digitale et Réseaux Sociaux</title>
     <?php wp_head(); ?>
 </head>
     

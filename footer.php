@@ -17,7 +17,7 @@
         <p>La satisfaction de nos clients : Notre priorité !</p>
         <div class="reseau">
             <a href="https://www.facebook.com/profile.php?id=61573610879121" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://www.linkedin.com/in/nathanael-detourbe-7a5b02340/" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in"></i></i></a>
+            <a href="https://www.linkedin.com/company/novaneos" aria-label="Linkedin"><i class="fa-brands fa-linkedin-in"></i></i></a>
             <a href="https://www.instagram.com/novaneos.fr/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
          </div>
     </div>
